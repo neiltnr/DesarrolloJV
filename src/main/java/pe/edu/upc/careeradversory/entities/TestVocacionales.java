@@ -11,11 +11,12 @@ public class TestVocacionales {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int idTest;
 
+    @Column (name = "tipoTest", length = 30, nullable = false)
+    private String tipoTest;
         @Column (name = "duracionTest", length = 20, nullable = false)
         private int duracionTest;
 
-        @Column (name = "tipoTest", length = 30, nullable = false)
-        private String tipoTest;
+
 
     public TestVocacionales(){}
 
